@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "alumno",
+						"type": "address"
+					}
+				],
+				"name": "obtenerPromedio",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/0_2_Notas.sol": "Notas"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/0_2_Notas.sol": {
+			"keccak256": "0xcbebbc71f331e80315b28d65ed6af4f3061613a53217662c43ebcfd9b4264b8f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2ed57eeacaef187bbd8cf38dfe48eea0a45c2249d8719ee301dffa4c8a35a82c",
+				"dweb:/ipfs/QmTqQfFkp1Yc7LDhnaTYGGydQRfcreSqUChoc26yKDYYvp"
+			]
+		}
+	},
+	"version": 1
+}

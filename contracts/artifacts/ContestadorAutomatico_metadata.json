@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "nuevoMensaje",
+						"type": "string"
+					}
+				],
+				"name": "guardarMensaje",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "verMensaje",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/0_1_ContestadorAutomatico.sol": "ContestadorAutomatico"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/0_1_ContestadorAutomatico.sol": {
+			"keccak256": "0xa86bd8b45143f399d526355f0946da7af7277a3a43d270a58ad9aa843fa67bd2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a60597a26536f2838f19319bc70d210cbd9ec169f9ce95e8130d26378f8f2eba",
+				"dweb:/ipfs/QmeRijABwEmbTbYntoDV9h7ZyvddtzLB2Si6eDFaFZozaV"
+			]
+		}
+	},
+	"version": 1
+}

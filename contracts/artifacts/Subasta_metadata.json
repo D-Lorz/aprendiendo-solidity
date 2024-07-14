@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "apuestaNueva",
+						"type": "uint256"
+					}
+				],
+				"name": "apostar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maximaApuesta",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mayorPostor",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/0_2_Subasta.sol": "Subasta"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/0_2_Subasta.sol": {
+			"keccak256": "0x6026b0fd25657fa23b8dca1a9a84d2c2941ff388757c6e42ee70f0b26878378d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://347d746b4eb1035a026c96e83cb08e33769f36e4468acc3050ca28b5cc2ff164",
+				"dweb:/ipfs/QmWaN8rgpNPmf9gyGp7np1gBZrhJRuWyMPXpGnnTj9d41M"
+			]
+		}
+	},
+	"version": 1
+}
