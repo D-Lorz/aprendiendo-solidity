@@ -15,6 +15,8 @@ contract Instituto {
         uint8[] notas;
     }
 
+    event Nota(address indexed alumno, uint8 nota, uint indexed fecha, uint8 cantidad_notas);
+
     // Variable de estado para almacenar la dirección del administrador.
     address admin;
 
@@ -23,14 +25,23 @@ contract Instituto {
 
     // Constructor del contrato, que asigna la dirección del creador como administrador.
     constructor() {
+        console.log("Contrato desplegado por Admin:", msg.sender);
         admin = msg.sender;
     }
 
-    // Función para que el administrador agregue una nota a un alumno específico.
-    function agregarNota(uint8 nota, address alumno) external {
-        // Requiere que el llamador de la función sea el administrador.
-        if (msg.sender != admin) revert("El usuario no es el Admin");
+    // Requiere que el llamador de la función sea el administrador.
+    modifier isAdmin {
+        require(admin == msg.sender, "El usuario no es el Admin");
+        _;
+    }
 
+    modifier notaMaxima(uint nota, uint maxima) {
+        require(nota <= maxima, "La nota excede el maximo permitido");
+        _;
+    }
+
+    // Función para que el administrador agregue una nota a un alumno específico.
+    function agregarNota(uint8 nota, address alumno) external isAdmin notaMaxima(nota, 5) {
         // Mensaje de registro si el array de alumnos está vacío.
         if (alumnos.length == 0) console.log("El array esta vacio");
 
@@ -55,9 +66,13 @@ contract Instituto {
             alumnos[alumnos.length - 1].notas.push(nota);
         }
 
+        uint8 cantidadNotas = uint8(alumnos[alumnos.length - 1].notas.length);
+
+        emit Nota(alumno, nota, block.timestamp, cantidadNotas);
+
         // Mensajes de registro de la cantidad de alumnos y la cantidad de notas del último alumno.
         console.log("# Total de Alumnos: ", alumnos.length);
-        console.log("Cantidad de Notas del Alumno Actual: ", alumnos[alumnos.length - 1].notas.length);
+        console.log("Cantidad de Notas del Alumno Actual: ", cantidadNotas);
     }
 
     // Función para ver el promedio de notas de un alumno específico (llamador).

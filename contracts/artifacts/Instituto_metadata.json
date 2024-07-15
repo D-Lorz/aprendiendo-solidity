@@ -11,6 +11,37 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "alumno",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "nota",
+						"type": "uint8"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "fecha",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint8",
+						"name": "cantidad_notas",
+						"type": "uint8"
+					}
+				],
+				"name": "Nota",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint8",
@@ -70,11 +101,11 @@
 	},
 	"sources": {
 		"contracts/0_3_Instituto.sol": {
-			"keccak256": "0xe498fcace373b950363c9731945ea2f9e1b2f70091cdf2236e45340a863b5982",
+			"keccak256": "0xedc80c63c7a2a66408a949bd49ec8f8d4e6aa98934abb50349a4bc36eb7e240e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://aa50353edeca5fe1270ce015bcf0ad7c163ecf8a7cdcbc6e0af7cec3cc368910",
-				"dweb:/ipfs/QmYGF7qRneeBWnStFm5wFdzTxY7qrbTHLi94DdFUSAqidM"
+				"bzz-raw://bd81609c28c5d586366f018b5e0a784f158d15364cff151af9e8745f2340b4c5",
+				"dweb:/ipfs/QmdJZjBvUf8yqRF7u5WLuSKxM7amoxDzsgQbj52GS5PcKK"
 			]
 		},
 		"hardhat/console.sol": {

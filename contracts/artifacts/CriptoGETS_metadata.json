@@ -22,6 +22,37 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "origen",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "destino",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "monto",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "fecha",
+						"type": "uint256"
+					}
+				],
+				"name": "Transferencia",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -119,11 +150,11 @@
 	},
 	"sources": {
 		"contracts/0_4_Criptomoneda.sol": {
-			"keccak256": "0x15bbbd4b5402f854789115137ea48c831d1e4b3dde322180bb455cfc4e77bf0d",
+			"keccak256": "0x8e8c84815cebc27fe457b9f77db4dc0b0ffefa9a44e611cf225cc7c7ef73c635",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5c57b7ec7e9b53b26777f36703797a99265128acd3dcfc3690ccbe76adb74a4e",
-				"dweb:/ipfs/QmYxwdVo1VKQCkoxjbUHUeVBE2siYqeH2LiCCcZTuv1Dix"
+				"bzz-raw://e3641117a424e76d43360212a54f1998c5c015a25ae1b7f5ca53b09eebb73f57",
+				"dweb:/ipfs/Qmd8RXthtGQfgtNNp6HGeiKgJbkFe4inujYroQwMkRQ6Ce"
 			]
 		},
 		"hardhat/console.sol": {

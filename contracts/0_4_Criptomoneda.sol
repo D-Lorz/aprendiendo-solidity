@@ -11,8 +11,9 @@ contract CriptoGETS {
     
     // Mapping que guarda los saldos de tokens de cada usuario.
     mapping(address => uint) balances;
-    mapping (address => uint) balancesBloqueados;
+    mapping(address => uint) balancesBloqueados;
 
+    event Transferencia(address indexed origen, address indexed destino, uint monto, uint indexed fecha);
 
     // Configurar monto mínimo de transferencias
     uint montoMinimo;
@@ -22,6 +23,11 @@ contract CriptoGETS {
         // Asigna los tokens iniciales al creador del contrato.
         balances[msg.sender] += initialSupply;
         montoMinimo = minimo;
+    }
+
+    modifier saldoRequerido(uint monto, string memory tipo) {
+        require(verBalanceDisponible(msg.sender) >= monto, string(abi.encodePacked("No tienes fondos suficientes para ", tipo, ".")));
+        _;
     }
 
     // Consultar el saldo de total de tokens de una dirección específica.
@@ -35,12 +41,12 @@ contract CriptoGETS {
     }
 
     // Función para transferir tokens a otra dirección.
-    function transferir(address destino, uint monto) external {
+    function transferir(address destino, uint monto) external saldoRequerido(monto, "transferir") {
         // Verifica si el remitente tiene suficientes tokens para transferir.
         // Si no tiene suficientes tokens, se revierte la transacción.
-        // if (balances[msg.sender] - balancesBloqueados[msg.sender] < monto) revert("No tienes fondos suficientes para esta transferencia.");
-        if (verBalanceDisponible(msg.sender) < monto) revert("No tienes fondos suficientes para esta transferencia.");
-        if (monto < montoMinimo) revert("El monto es menor al minimo establecido.");
+        require(monto >= montoMinimo, "El monto es menor al minimo establecido.");
+
+        emit Transferencia(msg.sender, destino, monto, block.timestamp);
 
         // Realiza la transferencia reduciendo el saldo del remitente.
         balances[msg.sender] -= monto;
@@ -48,12 +54,9 @@ contract CriptoGETS {
         balances[destino] += monto;
     }
 
-    function solicitarPrestamos(uint montoPrestado) external {
+    function solicitarPrestamos(uint montoPrestado) external saldoRequerido(montoPrestado, "solicitar prestamo") {
         /* Verificar si el balance total disponible menos los bloqueados es mayor o igual al monto.
         De lo contrario no alcanza el saldo. */
-        // if (balances[msg.sender] - balancesBloqueados[msg.sender] < montoPrestado) revert("No te alcalza el saldo para solicitar prestamo");
-        if (verBalanceDisponible(msg.sender) < montoPrestado) revert("No te alcalza el saldo para solicitar prestamo");
-
         balancesBloqueados[msg.sender] += montoPrestado;
     }
 }
