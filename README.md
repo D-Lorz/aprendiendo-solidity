@@ -6,10 +6,8 @@
 - Trabajar independientemente sobre cualquier red que tenga compatibilidad con EVM.
 
 ## Temas tratados en el Curso
-
-### Módulo 1: Conceptos Básicos
 <details>
-  <summary>Temas</summary>
+  <summary> <h3> Módulo 1: Conceptos Básicos </h3></summary>
   <ul>
     <li>1.1 Conceptos sobre programación de contratos inteligentes con Solidity</li>
     <li>1.2 ¿Qué son los contratos inteligentes?</li>
@@ -18,9 +16,8 @@
   </ul>
 </details>
 
-### Módulo 2: Despliegue de Contratos
 <details>
-  <summary>Temas</summary>
+  <summary><h3> Módulo 2: Despliegue de Contratos </h3></summary>
   <ul>
     <li>2.1 Configuración de Metamask para desplegar un contrato inteligente</li>
     <li>2.2 Desplegando un contrato inteligente en testnet de Ethereum</li>
@@ -28,9 +25,8 @@
   </ul>
 </details>
 
-### Módulo 3: Sintaxis Compleja en Solidity
 <details>
-  <summary>Temas</summary>
+  <summary><h3>Módulo 3: Sintaxis Compleja en Solidity</h3></summary>
   <ul>
     <li>3.1 Arrays</li>
     <li>3.2 Enumerados</li>
@@ -47,9 +43,8 @@
   </ul>
 </details>
 
-### Módulo 4: Solidity Avanzado
 <details>
-  <summary>Temas</summary>
+  <summary><h3>Módulo 4: Solidity Avanzado</h3></summary>
   <ul>
     <li>4.1 Abstract vs Interface</li>
     <li>4.2 Herencia de contratos</li>
@@ -57,9 +52,8 @@
   </ul>
 </details>
 
-### Módulo 5: Funciones y Seguridad en Solidity
 <details>
-  <summary>Temas</summary>
+  <summary><h3>Módulo 5: Funciones y Seguridad en Solidity</h3></summary>
   <ul>
     <li>5.1 Llamado de funciones y aplicaciones prácticas</li>
     <li>5.2 Recomendaciones de seguridad básica</li>
@@ -67,9 +61,8 @@
   </ul>
 </details>
 
-### Módulo 6: Tokens en Solidity
 <details>
-  <summary>Temas</summary>
+  <summary><h3>Módulo 6: Tokens en Solidity</h3></summary>
   <ul>
     <li>6.1 Algunos errores comunes</li>
     <li>6.2 ¿Qué es un token y conceptos asociados?</li>
@@ -77,9 +70,8 @@
   </ul>
 </details>
 
-### Módulo 7: Oráculos y Plugins en Solidity
 <details>
-  <summary>Temas</summary>
+  <summary><h3>Módulo 7: Oráculos y Plugins en Solidity</h3></summary>
   <ul>
     <li>7.1 Instalando plugins en Visual Studio Code para Solidity</li>
     <li>7.2 Oráculos en Solidity: conceptos básicos</li>
