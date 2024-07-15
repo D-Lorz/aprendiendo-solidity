@@ -1,9 +1,9 @@
 # Programación de Contratos Inteligentes con Solidity
 
-- Desarrollar sus propias aplicaciones descentralizadas (dApps).
+- Desarrollar aplicaciones descentralizadas (dApps).
 - Crear una arquitectura o interconexión entre contratos inteligentes.
 - Utilizar librerías externas y oráculos.
-- Trabajar independientemente sobre cualquier red que tenga compatibilidad con la Máquina Virtual de Ethereum.
+- Trabajar independientemente sobre cualquier red que tenga compatibilidad con EVM.
 
 ## Temas tratados en el Curso
 
