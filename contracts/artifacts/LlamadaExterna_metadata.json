@@ -1,0 +1,135 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "valorNuevo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "direccion",
+						"type": "address"
+					}
+				],
+				"name": "llamadaUsandoCall",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "valorNuevo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "direccion",
+						"type": "address"
+					}
+				],
+				"name": "llamadaUsandoImport",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "mensaje",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "direccion",
+						"type": "address"
+					}
+				],
+				"name": "nuevoMensaje",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "direccion",
+						"type": "address"
+					}
+				],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/0_5_LlamadaExterna.sol": "LlamadaExterna"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/0_1_ContestadorAutomatico.sol": {
+			"keccak256": "0xa86bd8b45143f399d526355f0946da7af7277a3a43d270a58ad9aa843fa67bd2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a60597a26536f2838f19319bc70d210cbd9ec169f9ce95e8130d26378f8f2eba",
+				"dweb:/ipfs/QmeRijABwEmbTbYntoDV9h7ZyvddtzLB2Si6eDFaFZozaV"
+			]
+		},
+		"contracts/0_5_LlamadaExterna.sol": {
+			"keccak256": "0x8f15fedb6bc0e376ca2565fb6b697698c8d97d6ac55c192c0a20433b8c078147",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3e8c50e732ebd11e655df46129a5121d5e2c78d6412a3cff43bdccdac0da2d98",
+				"dweb:/ipfs/QmdP4UrcyPfrrC83iJ57oAAjqMTU8ZJNz8j4Myax2BEb4u"
+			]
+		},
+		"contracts/1_Storage.sol": {
+			"keccak256": "0xd3fde2e172f718a981753788e335f5a4fb9843d596798f599e331f6b34cd3467",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://394baacd7dbfc637d73d921e7c84ce2f94dca57443fc4adba3a4f62a3db7a6be",
+				"dweb:/ipfs/QmfZKrww1oBYeZ1FU9WieYsfiEE4cZLniysZchEgoLZpgy"
+			]
+		}
+	},
+	"version": 1
+}

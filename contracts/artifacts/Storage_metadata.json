@@ -6,6 +6,51 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerSet",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "retrieve",
 				"outputs": [
@@ -33,10 +78,20 @@
 			}
 		],
 		"devdoc": {
-			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
-			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {
+				"changeOwner(address)": {
+					"details": "Change owner",
+					"params": {
+						"newOwner": "address of new owner"
+					}
+				},
+				"getOwner()": {
+					"details": "Return owner address ",
+					"returns": {
+						"_0": "address of owner"
+					}
+				},
 				"retrieve()": {
 					"details": "Return value ",
 					"returns": {
@@ -50,7 +105,6 @@
 					}
 				}
 			},
-			"title": "Storage",
 			"version": 1
 		},
 		"userdoc": {
@@ -76,11 +130,27 @@
 	},
 	"sources": {
 		"contracts/1_Storage.sol": {
-			"keccak256": "0xa3de51030e5784d1fc25677298a0bd61bf7eac541ca2fc94232f1b7dc5a89e21",
+			"keccak256": "0x6e6ef7371a5f257f1cebb2b57b12cf8bd56981bc687fd058d840b2a3c6beb195",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://aac95d61b7ce356e2da8d93eb66abfabbeadebb4f44d3d78fd14414e7ac918ba",
-				"dweb:/ipfs/QmZ6otiNvDfrWzEiQJBAdWUurwEvsemrbBZgD9hj6qSki1"
+				"bzz-raw://d8d4cdca13263ac89fdc35de964cb9d6238b2b98d5ca32faaad06ab9fa5f9fa3",
+				"dweb:/ipfs/QmR6qVPYdVCHsdpsqZtLVP2D5nYR4TFkhWA3y7ViLYwL3D"
+			]
+		},
+		"contracts/2_Owner.sol": {
+			"keccak256": "0x262f32071bf2032388776fbc9a1b46fc9c18741b101eea251ef607cb16dce67c",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fc092dd39250857886104b458f2232f033645af8831f127cd967dd199792892d",
+				"dweb:/ipfs/QmPrdLSqnaFdaQvR9zAtXZH8QDvLrDEwc9e7ZmoswAkL1A"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x7434453e6d3b7d0e5d0eb7846ffdbc27f0ccf3b163591263739b628074dc103a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49355f780520494d1d5a0f01858385e51bb5280ce0ecfb960f16995065dca395",
+				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
 			]
 		}
 	},

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "verDatos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "verProfesion",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/0_6_Persona.sol": "isPersona"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/0_6_Persona.sol": {
+			"keccak256": "0x704f99f819d86009bddd040b46afc820849ea2a68c14820d001f8c14224a72bc",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a71da57e0d95cd4e5bf561fd7dcff1e62f86d9175e271dd62a1cdbeebe1f34f1",
+				"dweb:/ipfs/QmRZd2mtx1qi8Ap6aZqD6EQMtAY78Kg115WgHH3cxgVSn8"
+			]
+		}
+	},
+	"version": 1
+}
