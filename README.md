@@ -48,7 +48,7 @@
   <ul>
     <li>4.1 Abstract vs Interface</li>
     <li>4.2 Herencia de contratos</li>
-    <li>4.3 Address</li>
+    <li>4.3 Redefinición de Funciones</li>
   </ul>
 </details>
 
